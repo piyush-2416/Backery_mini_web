@@ -1,0 +1,673 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shoping</title>
+     <link rel="stylesheet" href="web.style.css">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+</head>
+<style>
+*{
+    padding:0px;
+    margin:0px;
+    
+}
+body{
+     background-color: rgb(254, 253, 251);
+     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.navbar{
+    background-color: rgb(145, 23, 23);
+    display:flex;
+    width:1150px;
+    height:70px;
+    color:aliceblue;
+}
+#navbar:active{
+  background-color:white ;
+  color:brown;
+}
+#navbar{
+  padding:2px;
+  margin-left:6px;
+  font-size: 40px;
+  font-weight: bolder;
+}
+#navbar:hover{
+  color:brown;
+  background-color: aliceblue;
+}
+#nav-home{
+    margin-left: 340px;
+    display: flex;
+     font-size: 28px;
+    top:10px;
+    text-align-last:-1px;
+     padding:20px;
+}
+#nav-home:hover{
+background-color:white;
+color:brown;
+}
+#nav-home:active{
+  background-color: white;
+  color: brown;
+}
+
+#nav-about{
+     display: flex;
+     font-size: 28px;
+    top:10px;
+    text-align-last:-1px;
+     padding:20px;
+}
+#nav-about:hover{
+  background-color: white;
+  color:brown;
+}
+
+#nav-contect{
+     display: flex;
+     font-size: 28px;
+    top:10px;
+    text-align-last:-1px;
+     padding:20px;
+    text-align:center;
+}
+#nav-contect:hover{
+  background-color:white;
+  color:brown;
+}
+.nav-icons{
+   
+    margin-left:94%;
+    padding:16px;
+    display: flex;
+    margin-top:-6%;
+      font-size: 25px;
+      color:white;
+      gap:2px;
+      background-color: brown;
+    }
+    .nav-icons:hover{
+color:brown;
+background-color:white;
+    }
+#pre-icon{
+  left:2%;
+}
+
+#navicon{
+     display: flex
+;margin-left: 107%;
+    font-size: 52px;
+    /* top: 2px; */
+    margin-top: -40px;}
+    
+.main-shop {
+        display:flex;
+        gap:3%;
+     }
+    .main-shop img{
+border-radius: 5%;
+margin-left:3%;}
+.main-shop p{
+  color:brown;
+}
+.cart-btn{
+  background-color:brown;
+  color: white;
+  padding:0.6%;
+  border-radius:15px;
+  font-size:20px;
+}
+.select-btn{
+ background-color:brown;
+  color: white;
+  padding:0.6%;
+  border-radius:15px;
+  font-size:15px;
+} .Producta{
+  display:flex;
+
+ }
+.Producta  img{
+     top:0px;
+  width: 250px;      
+  height: 250px; 
+ margin:10px;  
+border:5px solid dodgerblue;
+ border-radius: 30%;
+ margin-left:10%;
+ overflow: hidden;
+ }
+
+.Producta  img:hover{
+    transform:translatey(-15px);
+      transform: scale(1.1);
+      overflow: hidden;  
+      transition:  all ease-in-out 0.5s ; 
+ }* .Producta {
+ display: flex;
+  gap: -17%;
+  position: relative;
+margin-left:5%;
+   padding:-12%;
+ }
+
+  .Producta img {
+   width: 90px;
+  height: 90px;
+  position:relative;
+  right:89%;
+  display:flex;
+  margin-top:18%;
+  border-radius: 8px; 
+}
+
+/* Optional scrollbar styling */
+ .Producta::-webkit-scrollbar {
+  height: 8px;
+}
+
+.Producta::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 10px;
+}
+
+.Producta::-webkit-scrollbar-track {
+  background: #eee;
+}
+#product{
+  display:flex;
+  gap:0.5%;
+  border-radius: 5%;
+  margin-left:2%;
+}
+#product img{
+  width:250px;
+  /* border:30px; */
+  gap:10%;
+  margin:5%;
+  border-radius: 5%;
+  border:5px solid brown;
+  border-bottom:80px solid brown;
+  height:250px;
+}
+#boxtext{
+    position: absolute;
+  top: 205%;               /* text vertically center */
+  left: 10%;             /* text horizontally center */
+  transform: translate(-50%, -50%);
+  
+   gap: 10%;
+   padding:0.5px;
+   box-shadow: 5px 5px 8px rgb(65, 64, 64);
+  color: white;           /* text color */
+  font-size: 16px;
+  font-weight: bold;
+  text-shadow: 2px 2px 4px black; /* readability ke liye */
+  background: rgba(0, 0, 0, 0.4); /* semi-transparent background */
+  padding: 10px 20px;
+  border-radius: 8px;
+}#boxtext i{
+  font-size: 20px;
+ }
+#boxtext1{
+
+  position: absolute;
+  top: 195%;              /* text vertically center */
+  left: 28%;              /* text horizontally center */
+  /* transform: translate(-50%, -50%); */
+   box-shadow: 5px 5px 8px rgb(65, 64, 64);
+  color: white;           /* text color */
+  font-size: 16px;
+  font-weight: bold;
+  text-shadow: 2px 2px 4px black; /* readability ke liye */
+  background: rgba(0, 0, 0, 0.4); /* semi-transparent background */
+  padding: 10px 20px;
+  border-radius: 8px;
+
+}
+
+#boxtext1 i{
+  font-size: 20px;
+ /* margin-left:15%; */
+}
+#boxtext2{
+  position: absolute;
+   box-shadow: 5px 5px 8px rgb(65, 64, 64);
+   top: 205%;              /* text vertically center */
+  left: 57%;              /* text horizontally center */
+  transform: translate(-50%, -50%);
+  color: white;           /* text color */
+  font-size: 16px;
+  font-weight: bold;
+  text-shadow: 2px 2px 4px black; /* readability ke liye */
+  background: rgba(0, 0, 0, 0.4); /* semi-transparent background */
+  padding: 10px 20px;
+  border-radius: 8px;
+}#boxtext2 i{
+  font-size: 20px;
+   
+}
+ #boxtext3{
+ position: absolute;
+   box-shadow: 5px 5px 8px rgb(65, 64, 64);
+  top: 204%;              /* text vertically center */
+  left: 83%;              /* text horizontally center */
+  transform: translate(-50%, -50%);
+  color: white;           /* text color */
+  font-size: 16px;
+  font-weight: bold;
+   background: rgba(0, 0, 0, 0.4); /* semi-transparent background */
+  padding: 10px 20px;
+  border-radius: 8px;               /* text vertically center */
+ }#boxtext3 i{
+  font-size: 20px;
+ }
+.contectsection{
+color: rgb(249, 248, 246);
+background-color:rgb(145, 23, 23) ;
+  border-radius: 5px;
+  margin-inline-end: 100% ;
+  width:138px;
+  height:113px;
+  margin-left:2%;
+ text-align: center;
+ transition: 0.5s ease;
+  box-shadow: 5px 5px 8px rgb(65, 64, 64);
+}
+.contectsection:hover{
+  transform: scale(1.1);   
+    box-shadow: 0 10px 30px   brown;  
+    cursor: pointer;
+}.e-mailsection{
+    color: rgb(249, 248, 246);
+    background-color:rgb(145, 23, 23) ;
+    border-radius: 5px;
+    margin-inline-start: 40% ;
+    margin-top:-112px ;
+    width:138px;
+    height:113px;
+    text-align: center;
+    transition: 0.5s ease ;
+    font-size:20px;
+   box-shadow: 5px 5px 8px rgb(65, 64, 64);
+}
+.e-mailsection:hover{
+    transform: scale(1.1);   
+    box-shadow: 0 10px 30px   brown;  
+    cursor: pointer;
+}
+.addsect{
+    color: rgb(249, 248, 246);
+    background-color:rgb(145, 23, 23) ;
+    border-radius: 5px;
+    margin-inline-start:80% ;
+    margin-top:-112px;
+    width:138px;
+    font-size:25px;
+    height:113px;
+    transition: 0.5s ease;
+    text-align: center;
+    box-shadow: 5px 5px 8px rgb(65, 64, 64);
+}
+.addsect:hover{
+    transform: scale(1.1);   
+    box-shadow: 0 10px 30px  brown;  
+    cursor: pointer;
+}#SECTIONA{
+  font-size: 35PX;
+  margin-left: 5PX;
+  color:white;
+}
+#SECTIONB {
+  font-size: 35PX;
+  margin-left: 37%;
+  margin-top: -25%;
+  color:white;
+}
+ #star-i{
+  color:gold;
+  font-size: medium;
+ }
+#SECTIONB i{
+color:rgb(244, 237, 237);
+}
+.bottom-2{
+
+background-color: brown;}
+.bottom-2 img{
+   filter: brightness(30%) contrast(110%);
+
+}
+#sectionc{
+  font-size: 25PX;
+margin-left:65%;
+margin-top:-18%;
+  color:white;
+}
+#btn6{
+  font-size: 25px;
+   background-color:rgb(251, 248, 248);
+   color:brown;
+   
+}
+.active{
+  color:brown;
+  background-color: white;
+}
+.scroller {
+  width: 100%;
+  overflow: hidden;
+   white-space: nowrap; 
+  background:  brown;
+  padding: 10px 0;
+  font-size: 22px;
+   font-weight: bold; 
+}
+
+.scroller span {
+  display: inline-block;
+  padding-left: 100%;
+  animation: scroll 12s linear infinite;
+}
+
+@keyframes scroll {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-100%); }
+}
+  span{
+ font-weight: bold;
+ font-size: 20px;
+   }
+  
+   
+.offers {
+  width: 100%;
+  overflow: hidden;
+   white-space: nowrap; 
+  background:  brown;
+  padding: 10px 0;
+  font-size: 22px;
+  object-fit: cover;
+  overflow: hidden;
+  image-rendering: auto;
+   font-weight: bold; 
+}
+
+.offers span {
+  display: inline-block;
+  padding-left: 100%;
+  object-fit: cover;
+  overflow: hidden;
+  animation: scroll 12s linear infinite;
+}
+
+@keyframes scroll {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-100%); }
+}
+  span{
+ font-weight: bold;
+ font-size: 20px;
+   }
+.map{
+  display:flex;
+  overflow: hidden;
+}
+.map iframe{
+  width:50%;
+  /* position:absolute; */
+  }
+.map .map-para{
+  color:dodgerblue;
+  width:50%;
+}
+.map h2{
+  color:black;
+}
+.map i{
+  font-size:25px;
+  padding:5px;
+  bottom:7%;
+  position:relative;
+  left:27%;
+}
+.map i:hover{
+  text-shadow: 5px 5px 8px dodgerblue;
+}
+
+ .location{
+  display:flex;
+ }
+ .location iframe{
+  margin-left:2%;
+  border-radius: 5px;
+ }
+
+ #likeBtn{
+  font-size: 38px;
+  margin-left:18%;
+  color:white;
+  background-color:rgb(145, 23, 23);
+  }.bottom-2{
+  font-size: 25px;
+  font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  background-color: dodgerblue;
+  position: absolute;
+
+}
+.bottom-2 img{
+  border:0px solid dodgerblue;
+ position: relative;
+  margin-left: 0px;
+   object-fit: cover;
+   image-rendering: auto;
+}
+/* Map section */
+
+
+#SECTIONA {
+  font-size: 35PX;
+  margin-left: 5PX;
+  margin-bottom: -7%;
+  bottom:15%;
+  position:absolute;
+color:BLACK;
+}
+.sectiona h3{
+color:dodgerblue;
+}
+#SECTIONB {
+  font-size: 35PX;
+  margin-left: 37%;
+margin-top:-38%;
+position: relative;
+  color:rgb(5, 2, 2);
+}
+#SECTIONB i{
+color:rgb(245, 237, 237);
+}
+
+#SECTIONB h3{
+  color:dodgerblue;
+}
+#sectionc{
+  font-size:21PX;
+ left:5%;
+margin-top:15%;
+position:relative;
+  color:white;
+}
+
+#sectionc h2{
+  color:dodgerblue;
+}
+#sectionc input{
+  font-size: 20px;
+  border-radius:10px;
+}
+#btn6{
+  font-size: 25px;
+   background-color:rgb(251, 248, 248);
+   color:black;
+   border-radius: 10px;
+   
+}
+</style>
+<body>
+    	<div class="navbar">
+		 <b> <h1 id="navbar"> Shop</h1> </b>
+		 
+		<b> <a  onclick="window.location.href='Bakery1.html';"id="nav-home">Home</a></b>
+		<HR>
+			<b> <a class="active" id="nav-about">Product</a></b>
+		<HR>
+			<b> <a id="nav-contect">Contact</a></b><HR>
+
+  <div id="likeBtn"><i class="fa-solid fa-cart-plus"></i>
+   <sup> <span id="likeCount">0</span></sup></div></div>
+
+    
+
+</button> 
+	</div><br><br>
+    <div class="main-shop">
+ <img  id="newImg" src="https://img.freepik.com/premium-photo/nutella-cake-professional-photography-generative-ai_913266-12760.jpg?w=996" alt="My Image" width="400px;" height="370px" alt="">     <div class=main-text> <h2>Fresh cake</h2><h3>
+        Chocolate cake</h3><br>
+        <h2>$5.00</h2><br>
+    <select class="select-btn">
+        <option>1kg</option>
+        <option>2kg</option>
+        <option>3kg</option>     
+     </select><br>
+           <div class="main-btn">  </div>
+           <br>
+           <button class="cart-btn">Add To Cart</button> 
+           <br><br>
+           <h2>Details</h2>
+            <P>A rich and moist chocolate cake made with premium cocoa powder, layered with smooth chocolate ganache. Each bite is soft, fluffy, and melts in the mouth. Perfect for birthdays, celebrations, or any sweet craving.</P>
+<div class="Producta" >
+  <img    src=" https://th.bing.com/th/id/R.c52bf2e08b323e7c9b933b265adc24c7?rik=cy5y%2fVgt5u4YrQ&riu=http%3a%2f%2fwww.baltana.com%2ffiles%2fwallpapers-14%2fCake-HD-Wallpaper-36724.jpg&ehk=mSF5lRkAF7BbZtfF7PU%2bXVLmy4susHwagwQ09er8XuU%3d&risl=&pid=ImgRaw&r=0" alt=""onclick="show(this)">
+ <div> 
+ </div>
+<img   src="https://www.chicagomag.com/wp-content/archive/images/2019/0219/C201902-F-How-to-Decorate-a-Cake.jpg" alt="" onclick="show(this)" >
+	<div  > </div> 
+	<img   src="https://cakesportal.in/wp-content/uploads/2022/06/Best-Cakes-for-Anniversary-Celebration-red-velvet-cake.jpg " alt=""  onclick="show(this)">
+				<div > 
+			   </div></div><br><br>
+  	 </div><br><br><br></div><br><br><hr><h1>Product Featured</h1><div id="product"> 
+  <br><br>
+  <div class="bottom1"> 
+		<img src=
+" https://img.freepik.com/premium-photo/cupcake-plate-white-background-fresh-cupcake_1026019-1814.jpg"width="200px;"  height="200px;"alt="">
+				<p id="boxtext">Fresh Cupcake<br><i id="star-i" class="fa-solid fa-star"></i><i  id="star-i"class="fa-solid fa-star"></i><i  id="star-i"class="fa-solid fa-star"></i><br><br>$15           
+                    <i class="fa-solid fa-cart-plus"></i></p></div>
+        <br><br>
+				<div class="bottom2"> 
+		 <img src="https://tse4.mm.bing.net/th/id/OIP.IISVdGFCWDNrVUF2wjbkUQHaE8?cb=12&rs=1&pid=ImgDetMain&o=7&rm=3" width="200px;" height="200" alt="">
+				<p id="boxtext1">Cookies<br><i id="star-i" class="fa-solid fa-star"></i><i  id="star-i"class="fa-solid fa-star"></i><i  id="star-i"class="fa-solid fa-star"></i><br><br>$43   <i class="fa-solid fa-cart-plus"></i></p></div>
+        <br><br>
+				<div class="bottom3">
+				<img src=" https://images.pexels.com/photos/1414234/pexels-photo-1414234.jpeg" width="200px;"  height="200px;"alt="">
+				<p id="boxtext2">Pastry<br><i id="star-i" class="fa-solid fa-star"></i><i id="star-i" class="fa-solid fa-star"></i><i  id="star-i"class="fa-solid fa-star"></i><br><br>$23  <i class="fa-solid fa-cart-plus"></i></p><br></div>
+        <br><br>
+<div class="bottom4"> 
+<img src=" https://img.freepik.com/premium-photo/brown-bread-isolated-white_846485-9982.jpg"width="200px;"  height="200px;" alt="">
+	<p id="boxtext3">Brown Bread<br><i id="star-i" class="fa-solid fa-star"></i><i  id="star-i"class="fa-solid fa-star"></i><i  id="star-i"class="fa-solid fa-star"></i><br><br>$32<i class="fa-solid fa-cart-plus"></i></p>
+	</div>
+	</div><HR><h1>OFFERS</h1><HR><br><div class="offers">
+  <span><img src="https://blog.flyerwiz.app/wp-content/uploads/2023/09/01-Yellow-Bakery-Special-Offer-Flyer.jpg" width="250" height="250" alt="">
+  <img src="https://d1csarkz8obe9u.cloudfront.net/posterpreviews/bakery-special-offer-design-template-4c2cdd7de4a13573e0b3f38587e3dbe7_screen.jpg?ts=1662971995" width="250" height="250" >
+
+  <img src="https://tse3.mm.bing.net/th/id/OIP.57NhPNIh8di5b6cS3jSdNwHaE4?rs=1&pid=ImgDetMain&o=7&rm=3" width="350" height="250" >
+
+  <img src="https://image.freepik.com/free-vector/banner-design-special-offer-cake-bakery-home-delivery-cartoon-style-template_262129-2999.jpg" width="250" height="250" >
+ 
+  <img src="https://th.bing.com/th/id/OIP.rqryezxRCPTi4D05yWS3ogHaKe?w=186&h=263&c=7&r=0&o=7&dpr=1.7&pid=1.7&rm=3" width="250" height="250" >
+ 
+  <img src="https://th.bing.com/th/id/OIP.7wq1In1RdgTgEjnJwV3DQAHaLJ?w=146&h=220&c=7&r=0&o=7&dpr=1.7&pid=1.7&rm=3"width="250" height="250">
+ <div class="scroller"> <span> 🍰 Fresh Cakes — 🥐 Bakery Pro — 🧁 Sweet Home — 🎂 Cake World — 🍩 Donut House — 🥞 Bread Corner — 🍪 Cookie Hub </span> </div>
+ <hr></span></div>
+  <hr><br> <h1>Location <i class=" fas fa-location"></i></h1><hr><br>
+  <div class="map">
+  <iframe src= "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7002.66222368356!2d77.287675455373!3d28.649802867526752!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390cfb5c19b33adb%3A0xf2081bd56338d441!2sJagat%20Puri%2C%20Krishna%20Nagar%2C%20Delhi%2C%20110051!5e0!3m2!1sen!2sin!4v1764337106896!5m2!1sen!2sin" width="650px" height="450" margin-left="5" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe> 
+<br><br><div class="map-para"> <br><br><h2><b>Live-Location</b></h2>An e-commerce website delivery system with live map integration plays a very important role in building customer trust and improving the overall shopping experience. When users place an order, they not only want fast delivery but also clear visibility of where their product is and when it will arrive. By showing real-time delivery tracking on a map, customers can easily see the current location of the delivery partner, the route being followed, and the estimated time of arrival. This transparency reduces anxiety, minimizes unnecessary support calls, and increases customer satisfaction. Map-based delivery tracking also helps businesses manage logistics more efficiently by optimizing routes, reducing fuel costs, and avoiding delays caused by traffic or incorrect addresses. Features like location pins, status updates such as “order confirmed,” “out for delivery,” and “delivered,” along with push notifications, make the delivery process smooth and user-friendly. Additionally, integrating GPS and map services improves accuracy, ensures timely deliveries, and creates a professional and modern impression of the brand. Overall, an e-commerce delivery system with map support not only enhances operational efficiency but also strengthens customer loyalty by providing a reliable, transparent, and interactive delivery experience.<br><br> <br> 
+ <i class="fab fa-google"style="color:black;"></i><i class="fa-brands fa-whatsapp"style="color:black;"></i> <i class="fa-brands fa-amazon-pay"style="color:black;"></i><i class="fa-brands fa-instagram"style="color:black;"></i>
+</div></div><hr>
+ 
+  <H1>CONTACT US</H1>
+ 
+	<BR><hr>
+		<div class="bottom-2">
+      <img src="https://www.thespruceeats.com/thmb/w282FiA18oOHgNqftYbo93B5an8=/5928x3957/filters:fill(auto,1)/classic-and-easy-chocolate-cake-recipe-995137-hero-01-e361ee51a67d4c12afb451cc48fb1940.jpg"width="1140px;" height="550px;">
+		<div id="SECTIONA">
+			<b><p style="color:dodgerblue;">Quick Link</p></b>
+			<P>Home</P>
+			<P>Address</P>
+			<P>Contact</P>
+			<P>About</P>
+			<P>Shop</P>
+			<p>Review</p>
+			</div>
+			<br>
+			<br>
+		<div id="SECTIONB">
+			<b><P style="color:dodgerblue;">Follow Us</P></b>
+			<P>   <i class="fa-brands fa-square-instagram" style="color:fuchsia;"></i>Instagram</P>
+			<P>    <i class="fa-brands fa-square-twitter"style="color:skyblue;"></i> Twitter</P>
+			<P><i class="fa-brands fa-linkedin"style="color:dodgerblue;"></i>  Linkedin</P>
+			<p><i class="fa-brands fa-facebook"style="color:blue;"></i>Facebook</p>
+			<p>   <i class="fa-brands fa-square-whatsapp"style="color:green;"></i>Whatsapp</p>
+    </div><br>
+		</div> 
+		<br>
+<div id="sectionc">
+	<h2>Newsletter</h2>
+	<h4>Don't miss any offer</h4>
+    <input  id="secc" placeholder="your Name">
+	    <input id="secc" placeholder="your e-mail">
+    <input id="secc" placeholder="your Number">
+    <input id="secc" placeholder="your current-Addres">
+    <br>
+<button id="btn6">Subscribe</button>
+</div>
+<br><br>
+</div>
+<h1> created by Piyush</h1>
+<script>document.getElementById("nav-contect").addEventListener("click", () => {
+  document.getElementById("box1text").scrollIntoView({ behavior: "smooth" });
+});
+document.getElementById("nav-about").addEventListener("click", () => {
+  document.getElementById("product").scrollIntoView({ behavior: "smooth" });
+ 
+});document.getElementById("nav-contect").addEventListener("click", () => {
+  document.getElementById("SECTIONA").scrollIntoView({ behavior: "smooth" });
+});
+ 
+
+let count = 0;
+ let btn = document.getElementById("likeBtn");
+ let display = document.getElementById("likeCount");
+ let cartbtn = document.getElementsByClassName("cart-btn")[0];
+
+ 
+  
+ cartbtn.addEventListener("click", () => {
+count++;               // increase count
+  display.innerText = count;   // show new count
+ });
+ function show(img){
+  let newimg=document.getElementById("newImg");
+   newimg.src=img.src;
+ }
+</script>
+  
+</body>
+</html>
+ 
+   
+	 

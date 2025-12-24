@@ -1,0 +1,961 @@
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Cake Shop Website</title>
+ <link rel="stylesheet" href="web.style.css">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+<style>
+*{
+    padding:0px;
+    margin:0px;
+    
+}
+body{
+  flex-wrap:wrap;
+     background-color: rgb(254, 253, 251);
+     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.navbar{
+    background-color: rgb(145, 23, 23);
+    display:flex;
+    width:1150px;
+    height:70px;
+    flex-wrap:wrap;
+    color:aliceblue;
+}
+@media(max-width:480px){
+  /* max-width:60%; */
+}
+#navbar:active{
+  background-color:white ;
+  color:brown;
+}
+#navbar{
+  padding:2px;
+  margin-left:6px;
+  font-size: 40px;
+  font-weight: bolder;
+}
+#navbar:hover{
+  color:brown;
+  background-color: aliceblue;
+}
+#nav-home{
+    margin-left: 350px;
+    display: flex;
+     font-size: 28px;
+    top:10px;
+    text-align-last:-1px;
+    /* justify-content: center; */
+    padding:20px;
+    color:brown;
+}
+#nav-home:hover{
+background-color:aliceblue;
+color:brown;
+}
+#nav-home:active{
+  background-color: aliceblue;
+  color: brown;
+}
+
+#nav-about{
+     display: flex;
+     font-size: 28px;
+    top:10px;
+    text-align-last:-1px;
+    /* justify-content: center; */
+    padding:20px;
+}
+#nav-about:hover{
+  background-color: aliceblue;
+  color:brown;
+}
+
+#nav-contect{
+     display: flex;
+     font-size: 28px;
+    top:10px;
+    text-align-last:-1px;
+    /* justify-content: center; */
+    padding:20px;
+}
+#nav-contect:hover{
+  background-color:aliceblue;
+  color:brown;
+}
+.nav-icons{
+   
+    margin-left:89%;
+    padding:16px;
+    display: flex;
+    margin-top:-6%;
+      font-size: 33px;
+      color:white;
+      gap:2px;
+    }
+    .nav-icons:hover{
+color:brown;
+background-color:aliceblue;
+    }
+#pre-icon{
+  left:2%;
+}
+#navicon{
+     display: flex
+;margin-left: 107%;
+    font-size: 52px;
+    /* top: 2px; */
+    margin-top: -40px;
+}
+.image-container i{
+  background: white; 
+  color:black;           /* image-containers images*/
+  font-size: 25px;
+position:relative;
+  margin-left:50%;
+  display:table-row;
+  gap:10%;
+  margin-top:40%;
+ 
+}
+#baktext{
+ text-align: center;
+ font-size:25px;
+     background-color: brown;
+
+}
+#TEXT4{
+    /* text-align: START; */
+    COLOR:rgb(10, 6, 10);
+    font-size:35px;
+        /* background-color: brown; */
+
+  
+}
+#text5{
+    text-align: end;
+    justify-content: start;
+    /* margin-top:5%; */
+    font-size: 30px;
+    /* background-color: brown; */
+}
+#products{
+   text-align: START;
+    font-size:28px;
+}
+#product{
+      text-align:end;
+    font-size: 25px;
+}
+.contectsection{
+color: rgb(249, 248, 246);
+background-color:rgb(145, 23, 23) ;
+  border-radius: 5px;
+  margin-inline-end: 100% ;
+  width:138px;
+  height:113px;
+  margin-left:2%;
+ text-align: center;
+ transition: 0.5s ease;
+  box-shadow: 5px 5px 8px rgb(65, 64, 64);
+}
+.contectsection:hover{
+  transform: scale(1.1);   
+    box-shadow: 0 10px 30px   brown;  
+    cursor: pointer;
+}
+#boxtext{
+    position: absolute;
+  top: 280%;               /* text vertically center */
+  left: 8%;              /* text horizontally center */
+  transform: translate(-50%, -50%);
+   box-shadow: 5px 5px 8px rgb(65, 64, 64);
+  color: white;           /* text color */
+  font-size: 14px;
+  font-weight: bold;
+  text-shadow: 2px 2px 4px black; /* readability ke liye */
+  background: rgba(0, 0, 0, 0.4); /* semi-transparent background */
+  padding: 10px 20px;
+  border-radius: 8px;
+}
+.bottom4 img{
+width:300PX;
+height: 200PX;
+border-radius: 10px;
+}
+#boxtext1{
+  position: absolute;
+  top: 280%;               /* text vertically center */
+  left: 35%;              /* text horizontally center */
+  transform: translate(-50%, -50%);
+   box-shadow: 5px 5px 8px rgb(65, 64, 64);
+  color: white;           /* text color */
+  font-size: 14px;
+  font-weight: bold;
+  text-shadow: 2px 2px 4px black; /* readability ke liye */
+  background: rgba(0, 0, 0, 0.4); /* semi-transparent background */
+  padding: 10px 20px;
+  border-radius: 8px;
+}
+#boxtext2{
+  position: absolute;
+   box-shadow: 5px 5px 8px rgb(65, 64, 64);
+  top: 280%;               /* text vertically center */
+  left: 60%;              /* text horizontally center */
+  transform: translate(-50%, -50%);
+  color: white;           /* text color */
+  font-size: 14px;
+  font-weight: bold;
+  text-shadow: 2px 2px 4px black; /* readability ke liye */
+  background: rgba(0, 0, 0, 0.4); /* semi-transparent background */
+  padding: 10px 20px;
+  border-radius: 8px;
+}
+.text-overlay{
+ position: absolute;
+   box-shadow: 2px 2px 4px black; /*readability ke liye */
+  top: 36%;               /* text vertically center */
+  left: 10%;              /* text horizontally center */
+  /* transform: translate(-50%, -50%); */
+  color: white;           /* text color */
+  font-size: 30px;
+  font-weight: bold;
+  transition:0.4s ease;
+   text-shadow: 2px 2px 4px black; /*readability ke liye */
+  background: rgb(145, 23, 23) ; /* semi-transparent background */
+  padding: 10px 20px;
+  border-radius: 8px; 
+}
+.text-overlay:hover{
+   transform: scale(1.1);   
+    box-shadow: 0 10px 30px   brown;  
+    cursor: pointer;
+}
+
+#boxtext3{
+    position: absolute;
+     box-shadow: 5px 5px 8px rgb(65, 64, 64);
+  top: 280%;               /* text vertically center */
+  left: 90%;              /* text horizontally center */
+  transform: translate(-50%, -50%);
+  color: white;           /* text color */
+  font-size: 14px;
+  font-weight: bold;
+  text-shadow: 2px 2px 4px black; /* readability ke liye */
+  background: rgba(0, 0, 0, 0.4); /* semi-transparent background */
+  padding: 10px 20px;
+  border-radius: 8px;
+}
+.e-mailsection{
+    color: rgb(249, 248, 246);
+    background-color:rgb(145, 23, 23) ;
+    border-radius: 5px;
+    margin-inline-start: 40% ;
+    margin-top:-112px ;
+    width:138px;
+    height:113px;
+    text-align: center;
+    transition: 0.5s ease ;
+    font-size:20px;
+   box-shadow: 5px 5px 8px rgb(65, 64, 64);
+}
+.e-mailsection:hover{
+    transform: scale(1.1);   
+    box-shadow: 0 10px 30px   brown;  
+    cursor: pointer;
+}
+#SECTIONA{
+  font-size: 35PX;
+ top:665%;
+ left:2%;
+  margin-left: 5PX;
+  position:absolute;
+  color: white;
+}
+#SECTIONB {
+  font-size: 35PX;
+  margin-left: 35%;
+  position: absolute;
+  margin-top: -40%;
+  color:white;
+}
+#SECTIONB i{
+color:rgb(245, 237, 237);
+}
+#sectionc{
+  font-size: 25PX;
+  position: absolute;
+margin-left:75%;
+margin-top:-40%;
+  color:white;
+}
+#btn6{
+  font-size: 25px;
+   background-color:rgb(251, 248, 248);
+   color:white;
+   border-radius: 5px ;
+   
+}
+.image1 img{
+  width:250px;
+  height:250px;
+  margin-left:30%;
+  border:10px solid brown;
+}
+ 
+.addsect{
+    color: rgb(249, 248, 246);
+    background-color:rgb(145, 23, 23) ;
+    border-radius: 5px;
+    margin-inline-start:80% ;
+    margin-top:-112px;
+    width:138px;
+    font-size:25px;
+    height:113px;
+    transition: 0.5s ease;
+    text-align: center;
+    box-shadow: 5px 5px 8px rgb(65, 64, 64);
+}
+.addsect:hover{
+    transform: scale(1.1);   
+    box-shadow: 0 10px 30px  brown;  
+    cursor: pointer;
+}
+
+.bottom2{
+   display:flex;
+   gap:90px;
+}
+#btn6{
+    background-color: rgb(145, 23, 23);
+    padding:3px;
+}
+#last{
+    text-align: center;
+    margin-bottom: 100%;
+    font-size: 50px;
+}
+ 
+
+.main img {
+  width: 500px;
+  /* margin-left:80%; */
+  height: 350px;
+  border-radius: 10px;
+  margin-left: 25%;
+  box-shadow: 0 0 30px 5px rgba(60, 58, 57, 0.6);
+
+} 
+#mainimg3 img{
+ width:400px;
+ height:350px;
+ border-radius: 10px;
+ margin-left: 25%;
+   box-shadow: 5px 5px 5px rgba(60, 58, 57, 0.6);
+
+}
+#maintext1{
+    position: absolute;
+  top: 70%;               /* text vertically center */
+  left: 50%;              /* text horizontally center */
+  transform: translate(-50%, -50%);
+  color: white;           /* text color */
+  font-size: 14px;
+  font-weight: bold;
+  text-shadow: 2px 2px 4px black; /* readability ke liye */
+  background: rgba(0, 0, 0, 0.4); /* semi-transparent background */
+  padding: 10px 20px;
+  border-radius: 8px;
+}
+#maintext2{
+    position: absolute;
+  top: 80%;               /* text vertically center */
+  left: 170%;              /* text horizontally center */
+  transform: translate(-50%, -50%);
+  color: white;           /* text color */
+  font-size: 15px;
+  font-weight: bold;
+  text-shadow: 2px 2px 4px black; /* readability ke liye */
+  background: rgba(0, 0, 0, 0.4); /* semi-transparent background */
+  padding: 10px 20px;
+  border-radius: 8px;
+}
+#maintext3{
+  position: absolute;
+  top: 200%;               /* text vertically center */
+  left: 30%;              /* text horizontally center */
+  transform: translate(-50%, -50%);
+  color: white;           /* text color */
+  font-size: 22px;
+  font-weight: bold;
+  text-shadow: 2px 2px 4px black; /* readability ke liye */
+  background: rgba(0, 0, 0, 0.4); /* semi-transparent background */
+  padding: 10px 20px;
+  border-radius: 8px;
+}
+   #image-container {
+  position: relative;
+  width: 490px;       /*image width set karo */
+  height: 350px;  
+   margin-left:42%;    /* image height set karo */
+}
+
+.image-container img {
+  width: 45%;
+  margin-left:40%;
+    box-shadow:0 5px 10px brown;
+
+  height: 100%;
+   
+  
+display: block;
+  border-radius: 10px; /* optional for rounded edges */
+}
+#text1-overlay { 
+    position: absolute;
+    top:429%;
+   left: 15%;             
+  transform: translate(-50%, -50%);
+  color: white;           
+  font-size: 18px;
+  font-weight: bold;
+  text-shadow: 2px 2px 4px black; 
+  background: rgba(0, 0, 0, 0.4);
+  padding: 10px 20px;
+  border-radius: 8px;
+}
+#text2-overlay{
+      position: absolute;
+   left: 43%;
+top:429%;  transform: translate(-50%, -50%);
+  color: white;           
+  font-size: 18px;
+  font-weight: bold;
+  text-shadow: 2px 2px 4px black; 
+  background: rgba(0, 0, 0, 0.4);
+  padding: 10px 20px;
+  border-radius: 8px;
+  gap:10%;
+}
+#text3-overlay{
+      position: absolute;
+   left: 77%;       
+top:429%;  transform: translate(-50%, -50%);
+  color: white;           
+  font-size: 18px;
+  font-weight: bold;
+  text-shadow: 2px 2px 4px black; 
+  background: rgba(0, 0, 0, 0.4);
+  padding: 10px 20px;
+  border-radius: 8px;
+}
+.main{
+  position: relative;
+  width: 350px;       /* image width set karo */
+  height: 300px;  
+  /* gap: 5%; */
+  display:flex; /* image height set karo */
+}
+
+.main img {
+  width: 100%;
+  height: 100%;
+  display:block;
+  gap: 5%;
+   
+  border-radius: 10px; /* optional for rounded edges */
+}
+ 
+/* Text Overlay */
+ 
+#ProductsA{
+    display:flex;
+
+}
+.Producta  img{
+    position: relative;
+  width: 250px;       /* image width set karo */
+  height: 250px; 
+ margin:40px;
+  /* padding:8px; */
+  border:5px solid brown;
+  border-bottom:45px solid brown;
+  display:flex; 
+ border-radius: 10px;
+ margin-left: 5%;
+}
+.bottom1 img{ 
+   display:flex;
+  width:300px;
+ height:250px;
+  position: relative;
+ }
+.bottom2 img{ 
+   display:flex;
+   width:300px;
+    /* filter: brightness(30%) contrast(110%); */
+
+ height:250px;
+  position: relative;
+  display:block;
+ }
+ .bottom3 img{ 
+   display:flex;
+   width:300px;
+  border-radius: 10px;
+ height:250px;
+   position: relative;
+
+ }
+#aboutus{
+  display:flex;
+
+}
+#imagebtn{
+  font-size: 25px;
+  font-weight: bold;
+}
+#btn5{
+   display: inline;
+   bottom:50%;
+   border-radius: 15px;
+  font-size: 18px;
+  color:black;
+  padding:3px;
+  background-color: brown;
+  font-family:sans-serif;
+ }
+ 
+
+
+.bottom-A{
+  display:flex;
+    box-shadow: 5PX 5PX 5px 5px rgba(60, 58, 57, 0.6);
+
+}
+  
+ * .bottom-A{ 
+ display: flex;
+  gap: 5px;
+ overflow-x: auto;      /*   enables mouse scroll*/
+  padding: 5px; 
+  white-space: nowrap; 
+}
+  .bottom-A img {
+   width: 300px;
+  height: 350px;
+  object-fit: cover;
+  flex-shrink: 0;
+  display:flex;
+  border-radius: 8px; 
+}
+
+/* Optional scrollbar styling */
+ .bottom-A::-webkit-scrollbar {
+  height: 8px;
+}
+
+.bottom-A::-webkit-scrollbar-thumb {
+  background: #888; 
+  border-radius: 10px;
+}
+
+.bottom-A::-webkit-scrollbar-track {
+  background: #eee;
+}
+
+
+#ProductsB img{
+     position: relative;
+    width: 250PX;
+    height: 250PX;
+    margin-left: 5%;
+    display: flex;
+    border-radius: 5PX;
+
+  }
+  .Producta{
+ display:flex;
+   width:370px;
+  height:270px;
+  margin-left: 7%;
+ gap:4%;
+ border-radius: 15px
+}
+.productb{
+  display:flex;
+ 
+}
+.productb img{
+  width:270px;
+  height:270px;
+  margin-left: 7%;
+ gap:4%;
+ border-radius: 15px;
+
+}
+.products {
+  display:flex;
+}
+.products img{
+  width:250PX;
+  border:5px solid brown;
+  border-bottom: 45px solid brown;
+  height: 250px;
+  margin-left: 8%;
+  border-radius: 10PX;
+}
+  /*CHATGPT TEXTOVERLEY*/
+  .productsectionB  {
+  position: relative;
+  width: 400px;       /* image width set karo */
+  height: 250px;      /* image height set karo */
+}
+
+.productsectionB img {
+  width: 100%;
+  height: 100%;
+  display: block;
+  border-radius: 10px; /* optional for rounded edges */
+}
+
+
+/* Text Overlay */
+#producttexta {
+  position: absolute;
+     top:495%;        /* text vertically center */
+  left:77%;              /* text horizontally center */
+  transform: translate(-50%, -50%);
+  color: white;           /* text color */
+  font-size: 17px;
+  font-weight: bold;
+  text-shadow: 2px 2px 4px black; /* readability ke liye */
+  background: rgba(0, 0, 0, 0.4); /* semi-transparent background */
+  padding: 10px 20px;
+  border-radius: 8px;
+}
+#producttextb {
+  position: absolute;
+  top:495%;        /* text vertically center */
+  left: 45%;              /* text horizontally center */
+  transform: translate(-50%, -50%);
+  color: white;           /* text color */
+  font-size: 17px;
+  font-weight: bold;
+  text-shadow: 2px 2px 4px black; /* readability ke liye */
+  background: rgba(0, 0, 0, 0.4); /* semi-transparent background */
+  padding: 10px 20px;
+  border-radius: 8px;
+}
+#producttextc {
+  position: absolute;
+      top:495%;        /* text vertically center */
+  left: 15%;              /* text horizontally center */
+  transform: translate(-50%, -50%);
+  color: white;   
+          /* text color */
+  /* width:100px; */
+  background-color: rgb(73, 40, 25);
+  /* height: 100px; */
+  font-size: 16px;
+  font-weight: bold;
+  text-shadow: 2px 2px 4px black; /* readability ke liye */
+  background: rgba(0, 0, 0, 0.4); /* semi-transparent background */
+  padding: 10px 20px;
+  border-radius: 8px;
+}
+
+  .productsectionB{
+    display: FLEX;
+    border-radius: 5PX;
+  }
+ .ABOUTUs img{
+  height:500px;
+      box-shadow: 5px 5px 8px rgb(65, 64, 64);
+ width:700px;
+ }
+ .ABOUTUs{
+  DISPLAY:FLEX;
+  GAP:15PX;
+  PADDING:2PX;
+ }
+#paragraph{
+  display:flex;
+  color:black;
+}
+.active{
+  
+   color:black;
+  background-color: aliceblue; 
+}
+#star-i{
+  color:yellow;
+}.scroller {
+  width: 100%;
+  overflow: hidden;
+  white-space: nowrap;
+  background:  brown;
+  padding: 10px 0;
+  font-size: 22px;
+  font-weight: bold;
+}
+
+.scroller span {
+  display: inline-block;
+  padding-left: 100%;
+  animation: scroll 12s linear infinite;
+}
+
+@keyframes scroll {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-100%); }
+}
+.bottom-2 img {
+ filter: brightness(40%) contrast(110%);
+ position: relative;
+
+}
+#Back{
+  width:75px;
+  height:75px;
+  font-size: 250%;
+  color:brown;
+  /* background-color: white; */
+  text-align:left;
+  justify-content: end;
+  left:55%;
+  position: absolute;
+}
+#Back:hover{
+    transform: scale(1.1);   
+transition: 0.5s ease-in;
+text-shadow: 8px 5px 8px white;
+}
+</style>
+</head>
+<body>
+	<div class="navbar">
+		 <b> <h1   id="navbar"> Shop</h1> </b>
+		 
+		<b> <a  class="active"id="nav-home">Home</a></b>
+		<HR>
+			<b> <a id="nav-about">About</a></b>
+		<HR>
+			<b> <a id="nav-contect">Contact</a></b><HR>
+</div>
+	<div class="nav-icons">
+		<i class="fa-solid fa-magnifying-glass"></i>
+		<i class="fa-solid fa-cart-shopping" ></i>
+		<i class="fa-solid fa-address-book"></i>
+
+		</div> 
+	</div>
+	 
+	<br>
+ 	
+	
+	
+ 
+	<div  class="image-container">
+    <img  id="image-container-img" src="https://img.freepik.com/premium-photo/nutella-cake-professional-photography-generative-ai_913266-12760.jpg?w=996" alt="My Image"> 
+		 <!-- <i class="fa-regular fa-heart"></i><i class="fa-regular fa-file"></i><i class="fa-solid fa-cart-shopping"></i> -->
+     <BR>	 </div>
+
+ 			 <div class="text-overlay">FRESH cake
+				<br>
+ 			  UPTO 80% OFF 
+			<BR>
+			<button id="imagebtn" onclick="window.location.href='Bakery2.html';"> BUY NOW</button>
+ 
+	</div>
+
+ <br>
+ <br>
+<hr>
+<br>
+<div  class="main">
+    <img  src=" https://images.pexels.com/photos/1291712/pexels-photo-1291712.jpeg" alt="My Image"> 
+		<div id="maintext1">Velvet Cake
+			<br>	
+			Upto 80% OFF
+			<br>
+			<button>BUY Now</button> 
+	</div>	
+ <br>
+	<p id="maintext2">Chocolate Cake 
+		<br>
+ UPTO 70% OFF
+ <br> 
+	    <button>BUY Now</button>  </p>
+	<img   src=" https://images.pexels.com/photos/2144200/pexels-photo-2144200.jpeg">
+ <br> 
+</div>
+<div id="mainimg3"> 
+  <img   src="https://media.geeksforgeeks.org/wp-content/uploads/20240301113805/image11_100.png">
+ <p id="maintext3">Marble cake
+	<br> 
+	 upto 60% OFF 
+	 <br>
+ <button>BUY Now</button> </p> </div>
+</div>
+<br>
+<hr>
+    <h1 id="baktext">THE BAKERY</h1>
+	<HR>
+		<b> <h1><P id="TEXT4">The Categories</P></h1></b>
+		<P id="text5">View All</P>
+		<hr>
+
+<br><br>
+    <div class="bottom-A">
+       <div class="bottom1"> 
+		<img src=
+" https://img.freepik.com/premium-photo/cupcake-plate-white-background-fresh-cupcake_1026019-1814.jpg" alt="">
+				<p id="boxtext">fresh cupcake</p></div>
+				<div class="bottom2"> 
+		 <img src="https://tse4.mm.bing.net/th/id/OIP.IISVdGFCWDNrVUF2wjbkUQHaE8?cb=12&rs=1&pid=ImgDetMain&o=7&rm=3" alt="">
+				<p id="boxtext1">cookies</p></div>
+				<div class="bottom3">
+				<img src=" https://images.pexels.com/photos/1414234/pexels-photo-1414234.jpeg" alt="">
+				<p id="boxtext2">Pastry</p></div>
+<div class="bottom4"> 
+ <img src=" https://img.freepik.com/premium-photo/brown-bread-isolated-white_846485-9982.jpg" alt="">
+	<p id="boxtext3">brown bread</p>
+	</div>
+	</div>
+	<br><br><div class="scroller">
+  <span> 🍰 Fresh Cakes — 🥐 Bakery Pro — 🧁 Sweet Home — 🎂 Cake World — 🍩 Donut House — 🥞 Bread Corner — 🍪 Cookie Hub </span>
+</div><br>
+<hr>
+
+ 
+<h1 id="products"> Products</h1>
+<h2 id="product">view All</h2>
+<hr>
+<BR><BR>
+ <div class="Producta">
+<img   src=" https://tse1.mm.bing.net/th/id/OIP.xaetUG304bbuVMpDW01ffwAAAA?cb=12&rs=1&pid=ImgDetMain&o=7&rm=3" alt="">
+<!-- <p id="text6">fruit cake</p>
+<p id="price">13$</p> -->
+<div id="text1-overlay">Fruit Cake
+	<br>
+	13$
+<i id="star-i" class="fa-solid fa-star"></i><i id="star-i" class="fa-solid fa-star"></i><i id="star-i" class="fa-solid fa-star"></i>
+</div>
+<img  src=" https://media.istockphoto.com/photos/donuts-picture-id106514543?k=6&m=106514543&s=612x612&w=0&h=MF9BN-BcxZQwRNZlepjXgVi0olqhoL3eeRI4EklmqgI=" alt="">
+	<div id="text2-overlay">Donut<br>18$<br><i id="star-i" class="fa-solid fa-star"></i><i id="star-i" class="fa-solid fa-star"></i><i id="star-i" class="fa-solid fa-star"></i></div> 
+<br>
+	<img  src="https://media.geeksforgeeks.org/wp-content/uploads/20240301114023/image_100.png" alt="">
+				<div id="text3-overlay">Sparkel cake
+					<br>
+					15$
+        <br><i id="star-i" class="fa-solid fa-star"></i><i id="star-i" class="fa-solid fa-star"></i><i id="star-i" class="fa-solid fa-star"></i></div>
+					</div>
+					<br>
+					<br><br><br><br><br>
+<div class="products">
+		<!-- <div id="image4"> -->
+<img src="https://cakehouseonline.com/wp-content/uploads/2019/12/Christmas-vanilla-cake.jpg" alt="">
+				<p id="producttexta">Nutella cake<br>12$<br><i id="star-i" class="fa-solid fa-star"></i><i id="star-i" class="fa-solid fa-star"></i><i id="star-i" class="fa-solid fa-star"></i></p>
+
+					<img  src=" https://th.bing.com/th/id/R.2f4248cc7e1fa3140fa20c6e4b1d005d?rik=utdygmpGfkixjw&riu=http%3a%2f%2fwww.browneyedbaker.com%2fwp-content%2fuploads%2f2013%2f08%2fultimate-chocolate-cupcakes-1-600-FW.jpg&ehk=0OVF%2fuvgLj320U72Um3tNCzWoyiHzEToEAlKsEkTHT4%3d&risl=&pid=ImgRaw&r=0" alt="">
+			<P id="producttextb">Choco Cup<BR>7$
+      <br><i id="star-i" class="fa-solid fa-star"></i><i id="star-i" class="fa-solid fa-star"></i><i id="star-i" class="fa-solid fa-star"></i><i id="star-i" class="fa-solid fa-star"></i></P>
+				 <img  src=
+"https://media.geeksforgeeks.org/wp-content/uploads/20240301113818/image10_100.png" alt="">
+			
+					<P id="producttextc"> Cranberry Cake<BR>23$<br><i id="star-i" class="fa-solid fa-star"></i><i id="star-i" class="fa-solid fa-star"></i><i id="star-i" class="fa-solid fa-star"></i></P>
+			</div>
+			<BR><BR>
+
+					<hr><br>
+				<h1> About Us</h1><hr>
+<div class="ABOUTUs">
+	<img src=" https://www.fabmood.com/inspiration/wp-content/uploads/2020/10/cake-idea-12.jpg" alt="">
+	<div id="aboutus"> 
+ 	<b><p id="paragraph"> <b><h1>Notice</h1></b>Welcome to Bakery, where every confection tells a story of passion and dedication.<br> Founded by a team of seasoned bakers with a shared love for crafting delectable treats,
+		<br> our bakery embodies a commitment to quality, creativity, and customer satisfaction.<br> From the finest ingredients sourced locally to the meticulous attention to detail in every recipe,
+		<br> we take pride in delivering indulgent experiences that delight taste buds and warm hearts. With each cake, pastry, and dessert,<br> we strive to create moments of joy and celebration,
+		 making every occasion a little sweeter.
+At Bakery, baking isn't just a profession;<br> it's a labor of love that fuels our imagination and drives our pursuit of perfection. <br>With years of experience and a flair for innovation,
+ our talented team brings together traditional techniques and modern flavors to create signature delicacies that are as visually stunning as they are delicious. Whether it's a custom-designed wedding cake,
+  a batch of freshly baked cookies, or a tempting assortment of pastries for a special event, we pour our passion into every creation, ensuring that each bite is a testament to our dedication to excellence.
+   Join us on a journey of culinary delights, where every bite is a taste of our unwavering commitment to baking brilliance.
+>At Bakery, baking isn't just a profession; it's a labor
+of love that fuels our imagination and drives our pursuit of perfection. With years of experience and a flair for innovation, our talented team brings together traditional techniques and modern flavors to create
+signature delicacies that are as visually stunning as they are delicious. Whether it's a custom-designed wedding cake, a batch of freshly baked cookies, or a tempting assortment of pastries for a special event, we pour our
+passion into every creation, ensuring that each bite is a testament to our dedication to excellence. Join us on a journey of culinary delights, where every bite
+is a taste of our unwavering commitment to baking brilliance.</p></p>
+  <button id="btn5">READ MORE</button>  <br>
+<br>
+<br><br><br></b>
+
+ 
+ </div>
+  </div>   <div id="contect-sec"> 
+<BR>
+<HR><BR>
+<H1>CONTACT US</H1>
+
+		<div class="bottom-2">
+      <img src="https://images.pexels.com/photos/461279/pexels-photo-461279.jpeg?cs=srgb&dl=bake-baked-blur-461279.jpg&fm=jpg"width="1100px;" height="550px;">
+		<div id="SECTIONA">
+			<p style="color:bisque">Quick Link</p>
+			<P>Home</P>
+			<P>Address</P>
+			<P>Contact</P>
+			<P>About</P>
+			<P>Shop</P>
+			<p>Review</p>
+			</div>
+			<br>
+			<br>
+		<DIV id="SECTIONB">
+			<P style="color:bisque">Follow Us</P>
+			<P>   <i class="fa-brands fa-square-instagram" style="color:darkmagenta;"></i>Instagram</P>
+			<P>    <i class="fa-brands fa-square-twitter"style="color:skyblue"></i> Twitter</P>
+			<P><i class="fa-brands fa-linkedin" style="color:dodgerblue"></i>  Linkedin</P>
+			<p><i class="fa-brands fa-facebook"style="color:blue"></i>Facebook</p>
+			<p>   <i class="fa-brands fa-square-whatsapp"style="color:green"></i>Whatsapp</p>
+		</DIV><br>
+		</div> 
+	
+<div id="sectionc">
+	<h2 style="color:bisque">Newsletter</h2>
+	<h4 style="color:bisque">Don't miss any offer</h4>
+    <input id="secc" placeholder="your Name"><br>
+	<input id="secc" placeholder="your e-mail"><br>
+  <input id="secc" placeholder="your Number"><br>
+  <input id="secc" placeholder="your Address"><br>
+	<button id="btn6">Subscribe</button>
+  <br><br><br>
+ <div id="Back"><i class="fa-solid fa-circle-up"></i></div>
+
+</div>
+ </div></div>
+<br> <hr>
+<div id="last">Creat by Piyush</div>
+</div>
+	</body>
+  <script>document.getElementById("nav-home").addEventListener("click", () => {
+  document.getElementById("maintext1").scrollIntoView({ behavior: "smooth" });
+});
+
+document.getElementById("nav-about").addEventListener("click", () => {
+  document.getElementById("aboutus").scrollIntoView({ behavior: "smooth" });
+});
+
+document.getElementById("nav-contect").addEventListener("click", () => {
+  document.getElementById("box1text").scrollIntoView({ behavior: "smooth" });
+});
+ document.getElementById("Back").addEventListener("click", () => {
+  document.getElementById("nav-home").scrollIntoView({ behavior: "smooth" });
+});
+ document.getElementById("nav-contect").addEventListener("click", () => {
+  document.getElementById("SECTIONB").scrollIntoView({ behavior: "smooth" });
+});
+</script>
+   </html>
